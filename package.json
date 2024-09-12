@@ -1,18 +1,21 @@
 {
   "name": "lime",
-  "private": true,
+  "private": false,
+  "license": "Apache-2.0",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "clean": "rm -rf ./pnpm-lock.yaml ./*.log ./.turbo ./node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "turbo": "^2.1.1",
     "typescript": "^5.4.5"
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.4.0",
   "engines": {
     "node": ">=18"
   }
