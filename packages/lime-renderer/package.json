@@ -1,5 +1,5 @@
 {
-  "name": "@repo/lime-ui",
+  "name": "@repo/lime-renderer",
   "version": "0.0.0",
   "private": true,
   "main": "src/index.ts",
@@ -9,13 +9,16 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^20.11.24",
-    "@types/react": "^18.2.61",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "@repo/lime-core": "workspace:*",
+    "@babylonjs/core": "^7.25.0",
+    "@babylonjs/loaders": "^7.25.0",
+    "@babylonjs/materials": "^7.25.0",
+    "@babylonjs/post-processes": "^7.25.0",
+    "lodash-es": "^4.17.21"
   }
 }

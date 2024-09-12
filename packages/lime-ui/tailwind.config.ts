@@ -1,9 +1,9 @@
-import type { Config } from "@repo/tailwind-config";
-import sharedConfig from "@repo/tailwind-config";
+import type { Config } from '@repo/tailwind-config'
+import sharedConfig from '@repo/tailwind-config'
 
-const config: Pick<Config, "content" | "presets"> = {
-  content: ["./src/app/**/*.tsx"],
+const config: Pick<Config, 'content' | 'presets'> = {
+  content: ['./src/**/*.tsx'],
   presets: [sharedConfig],
-};
+}
 
-export default config;
+export default config
