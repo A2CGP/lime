@@ -1,0 +1,3 @@
+.lime-ui-top-bar {
+  @apply text-foreground bg-top-bar flex-shrink-0 px-2;
+}

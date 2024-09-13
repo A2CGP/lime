@@ -63,9 +63,9 @@ importers:
       '@repo/lime-core':
         specifier: workspace:*
         version: link:../../packages/lime-core
-      '@repo/lime-renderer':
+      '@repo/lime-rendering':
         specifier: workspace:*
-        version: link:../../packages/lime-renderer
+        version: link:../../packages/lime-rendering
       '@repo/lime-ui':
         specifier: workspace:*
         version: link:../../packages/lime-ui
@@ -149,7 +149,7 @@ importers:
         specifier: ^5.3.3
         version: 5.6.2
 
-  packages/lime-renderer:
+  packages/lime-rendering:
     dependencies:
       '@babylonjs/core':
         specifier: ^7.25.0
