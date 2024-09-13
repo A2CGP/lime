@@ -5,6 +5,8 @@ import {
   ArcRotateCamera,
   HemisphericLight,
   MeshBuilder,
+  Color4,
+  Color3,
 } from '@babylonjs/core'
 import { GridMaterial } from '@babylonjs/materials'
 import { Context } from '@repo/lime-core'
@@ -19,6 +21,7 @@ export class RendererContext extends Context {
 
   public render() {
     const scene = new Scene(this.engine)
+    scene.clearColor = new Color4(0.25, 0.25, 0.25, 1.0)
 
     const camera = new ArcRotateCamera('camera', Math.PI / 4, Math.PI / 4, 8, Vector3.Zero(), scene)
     camera.lowerRadiusLimit = 4
@@ -38,7 +41,12 @@ export class RendererContext extends Context {
       },
       scene
     )
-    ground.material = new GridMaterial('material')
+    const material = new GridMaterial('material')
+    material.lineColor = new Color3(0.42, 0.42, 0.42)
+    material.mainColor = new Color3(0.41, 0.41, 0.41)
+    material.opacity = 0.8
+    material.backFaceCulling = false
+    ground.material = material
 
     this.engine.runRenderLoop(() => {
       scene.render()

@@ -1,0 +1,3 @@
+.lime-ui-area {
+  @apply text-foreground bg-area h-full w-full flex-1 overflow-hidden rounded-[6px];
+}

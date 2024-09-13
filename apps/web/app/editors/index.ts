@@ -1,1 +1,1 @@
-export * from './LayoutEditor'
+export * from './View3DEditor'

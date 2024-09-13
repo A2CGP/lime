@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 import { Renderer, RendererContext } from '@repo/lime-rendering'
 
-export function LayoutEditor() {
+export function View3DEditor() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -12,8 +12,8 @@ export function LayoutEditor() {
   }, [])
 
   return (
-    <div className="h-full w-full">
-      <canvas ref={canvasRef} className="h-full w-full"></canvas>
+    <div className="h-full">
+      <canvas ref={canvasRef} className="h-full w-full outline-none"></canvas>
     </div>
   )
 }
